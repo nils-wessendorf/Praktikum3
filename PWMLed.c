@@ -35,7 +35,7 @@ static int getValue(PWMLed pwmled){
 
 
 
-static PWMLedClass pwmledclass = {on, off, getStatus, getValue, setValue};
+static PWMLedClass pwmledclass = (PWMLedClass) {on, off, getStatus, getValue, setValue};
 
 // Konstruktor
 PWMLed newPWMLed(int* args) {
