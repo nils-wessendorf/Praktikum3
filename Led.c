@@ -39,5 +39,6 @@ Led newLed(int* args) {
 	led->pin = args[0];
 	led->status = 0;
 
+	
 	return led;
 }
